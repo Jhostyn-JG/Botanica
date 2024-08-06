@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li:hover, .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(173, 111, 66);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.header button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #4cae4c;
+}
+
+.content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: calc(100vh - 72px);
+    overflow-y: auto;
+}
+
+.product-details {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.product-info {
+    display: block;
+    width: 900px;
+    word-wrap: break-word;
+}
+
+.product-info h2 {
+    margin-top: 0;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+
+/* estilo de las imagenes */
+.product-image {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    background-size: cover; /* Asegúrate de que la imagen cubra el área */
+    background-position: center;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* estilo para la lista de productos */
+.search-results {
+    padding: 20px;
+    background-color: #f4f4f4;
+    
+}
+
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-results ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-results ul li:hover {
+    background-color: #ddd;
+}
+
+/*estilo para las imagenes del contenedor */
+ .contenedorImagenes{
+    display: block;
+    justify-content: space-around;
+}
+
+
+/* estilo para la barra de navegacion de la lista */
+
+.sidebar {
+    width: 250px;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    max-height: calc(100vh - 50px); /* Altura máxima igual al alto de la ventana menos el espacio del header */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(173, 111, 66);
+}
+
+
+/* estilo presentacion*/
+
+.card-body{
+    width: 800px;
+    margin-left: 17%;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.card-body img {
+    width: 500px;
+    border-radius: 25px;
+}
